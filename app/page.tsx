@@ -256,10 +256,10 @@ class InlineErrorBoundary extends React.Component<
 }
 
 // --- HELPER: Unique ID generator ---
-let idCounter = 100
+let idCounter = 0
 function generateId(): string {
   idCounter += 1
-  return `gen-${idCounter}`
+  return `gen-${Date.now()}-${idCounter}`
 }
 
 // --- HELPER: Copy to clipboard ---
@@ -786,7 +786,7 @@ function LeadBuilderScreen({
                             </span>
                           ) : <span className="text-muted-foreground">-</span>}
                         </TableCell>
-                        <TableCell className="text-xs font-mono">{lead.email || <span className="text-muted-foreground">-</span>}</TableCell>
+                        <TableCell className="text-xs font-mono">{lead.email ? lead.email : <span className="text-muted-foreground">-</span>}</TableCell>
                         <TableCell className="text-xs">
                           {lead.facebook_id ? (
                             <span className="flex items-center gap-1">
@@ -1224,12 +1224,13 @@ function DistributionScreen({
   const selectedContent = approvedContent.find(c => c.id === selectedContentId)
 
   useEffect(() => {
-    if (selectedContent) {
-      setCustomEmailSubject(selectedContent.email_subject ?? '')
-      setCustomEmailBody(selectedContent.description ?? '')
-      setCustomTwitterPost(selectedContent.social_post ?? '')
+    const content = approvedContent.find(c => c.id === selectedContentId)
+    if (content) {
+      setCustomEmailSubject(content.email_subject ?? '')
+      setCustomEmailBody(content.description ?? '')
+      setCustomTwitterPost(content.social_post ?? '')
     }
-  }, [selectedContentId])
+  }, [selectedContentId, approvedContent])
 
   const toggleLeadForDistribution = (id: string) => {
     setSelectedLeadIds(prev => {
