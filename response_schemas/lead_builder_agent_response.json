@@ -1,0 +1,46 @@
+{
+  "agent_name": "Lead Builder Agent",
+  "agent_id": "6999e718793564beb34c240d",
+  "description": "Searches the web for Indian traders across all trading segments (Stock, Forex, Commodity, Options & Futures), identifies trader profiles, and collects contact details including WhatsApp numbers, emails, Facebook IDs, and Instagram IDs. Outputs structured lead data.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "leads": [
+      {
+        "name": "string",
+        "trading_segment": "string",
+        "whatsapp": "string",
+        "email": "string",
+        "facebook_id": "string",
+        "instagram_id": "string",
+        "platform": "string",
+        "location": "string"
+      }
+    ],
+    "total_count": "number",
+    "segments_covered": [
+      "string"
+    ],
+    "summary": "string"
+  },
+  "example_response": {
+    "leads": [
+      {
+        "name": "sample string",
+        "trading_segment": "sample string",
+        "whatsapp": "sample string",
+        "email": "sample string",
+        "facebook_id": "sample string",
+        "instagram_id": "sample string",
+        "platform": "sample string",
+        "location": "sample string"
+      }
+    ],
+    "total_count": 0,
+    "segments_covered": [
+      "sample string"
+    ],
+    "summary": "sample string"
+  }
+}

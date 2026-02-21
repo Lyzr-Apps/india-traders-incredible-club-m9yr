@@ -1,0 +1,19 @@
+{
+  "agent_name": "Content Creator Agent",
+  "agent_id": "6999e7181868c611d8698139",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "title": "string",
+    "content_type": "string",
+    "script": "string",
+    "description": "string",
+    "target_segments": ["string"],
+    "key_points": ["string"],
+    "call_to_action": "string",
+    "hashtags": ["string"],
+    "email_subject": "string",
+    "social_post": "string"
+  }
+}

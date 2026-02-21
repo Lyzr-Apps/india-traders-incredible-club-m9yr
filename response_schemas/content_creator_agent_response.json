@@ -1,0 +1,44 @@
+{
+  "agent_name": "Content Creator Agent",
+  "agent_id": "6999e7181868c611d8698139",
+  "description": "Generates educational, tutorial-style content highlighting the uses and advantages of T4Peace indicators and courses. Produces professional, data-driven scripts and descriptions suitable for Indian trader audiences across all segments.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "title": "string",
+    "content_type": "string",
+    "script": "string",
+    "description": "string",
+    "target_segments": [
+      "string"
+    ],
+    "key_points": [
+      "string"
+    ],
+    "call_to_action": "string",
+    "hashtags": [
+      "string"
+    ],
+    "email_subject": "string",
+    "social_post": "string"
+  },
+  "example_response": {
+    "title": "sample string",
+    "content_type": "sample string",
+    "script": "sample string",
+    "description": "sample string",
+    "target_segments": [
+      "sample string"
+    ],
+    "key_points": [
+      "sample string"
+    ],
+    "call_to_action": "sample string",
+    "hashtags": [
+      "sample string"
+    ],
+    "email_subject": "sample string",
+    "social_post": "sample string"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "User Input",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "lead_builder_agent",
+      "type": "Agent",
+      "label": "Lead Builder Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "content_creator_agent",
+      "type": "Agent",
+      "label": "Content Creator Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "distribution_agent",
+      "type": "Agent",
+      "label": "Distribution Agent",
+      "nodeCategory": "agent"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_node",
+      "target": "lead_builder_agent"
+    },
+    {
+      "source": "lead_builder_agent",
+      "target": "content_creator_agent"
+    },
+    {
+      "source": "content_creator_agent",
+      "target": "distribution_agent"
+    }
+  ]
+}

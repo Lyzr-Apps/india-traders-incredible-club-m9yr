@@ -1,0 +1,23 @@
+{
+  "agent_name": "Distribution Agent",
+  "agent_id": "6999e72cc769218e9f83e984",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "campaign_name": "string",
+    "emails_sent": "number",
+    "emails_failed": "number",
+    "twitter_posted": "boolean",
+    "twitter_post_url": "string",
+    "distribution_summary": "string",
+    "recipients": [
+      {
+        "email": "string",
+        "status": "string",
+        "name": "string"
+      }
+    ],
+    "channels_used": ["string"]
+  }
+}

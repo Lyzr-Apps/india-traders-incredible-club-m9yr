@@ -1,0 +1,43 @@
+{
+  "agents": {
+    "lead_builder_agent": {
+      "agent_id": "6999e718793564beb34c240d",
+      "name": "Lead Builder Agent",
+      "description": "Searches the web for Indian traders across all trading segments (Stock, Forex, Commodity, Options & Futures), identifies trader profiles, and collects contact details including WhatsApp numbers, emails, Facebook IDs, and Instagram IDs. Outputs structured lead data.",
+      "provider": "perplexity",
+      "model": "sonar-pro",
+      "temperature": 0.2,
+      "top_p": 1,
+      "tools": [],
+      "has_image_output": false,
+      "has_voice": false,
+      "has_file_output": false
+    },
+    "content_creator_agent": {
+      "agent_id": "6999e7181868c611d8698139",
+      "name": "Content Creator Agent",
+      "description": "Generates educational, tutorial-style content highlighting the uses and advantages of T4Peace indicators and courses. Produces professional, data-driven scripts and descriptions suitable for Indian trader audiences across all segments.",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "tools": [],
+      "has_image_output": false,
+      "has_voice": false,
+      "has_file_output": false
+    },
+    "distribution_agent": {
+      "agent_id": "6999e72cc769218e9f83e984",
+      "name": "Distribution Agent",
+      "description": "Sends approved video content and educational material to collected leads via email. Also posts content to Twitter for broader social media reach.",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "temperature": 0.3,
+      "top_p": 1,
+      "tools": ["GMAIL_SEND_EMAIL", "TWITTER_CREATION_OF_A_POST"],
+      "has_image_output": false,
+      "has_voice": false,
+      "has_file_output": false
+    }
+  }
+}

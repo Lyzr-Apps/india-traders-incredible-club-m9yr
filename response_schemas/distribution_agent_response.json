@@ -1,0 +1,44 @@
+{
+  "agent_name": "Distribution Agent",
+  "agent_id": "6999e72cc769218e9f83e984",
+  "description": "Sends approved video content and educational material to collected leads via email. Also posts content to Twitter for broader social media reach.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "campaign_name": "string",
+    "emails_sent": "number",
+    "emails_failed": "number",
+    "twitter_posted": "boolean",
+    "twitter_post_url": "string",
+    "distribution_summary": "string",
+    "recipients": [
+      {
+        "email": "string",
+        "status": "string",
+        "name": "string"
+      }
+    ],
+    "channels_used": [
+      "string"
+    ]
+  },
+  "example_response": {
+    "campaign_name": "sample string",
+    "emails_sent": 0,
+    "emails_failed": 0,
+    "twitter_posted": false,
+    "twitter_post_url": "sample string",
+    "distribution_summary": "sample string",
+    "recipients": [
+      {
+        "email": "sample string",
+        "status": "sample string",
+        "name": "sample string"
+      }
+    ],
+    "channels_used": [
+      "sample string"
+    ]
+  }
+}

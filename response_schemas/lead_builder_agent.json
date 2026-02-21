@@ -1,0 +1,24 @@
+{
+  "agent_name": "Lead Builder Agent",
+  "agent_id": "6999e718793564beb34c240d",
+  "agent_type": "json",
+  "accessor": "json",
+  "has_module_outputs": false,
+  "response_schema": {
+    "leads": [
+      {
+        "name": "string",
+        "trading_segment": "string",
+        "whatsapp": "string",
+        "email": "string",
+        "facebook_id": "string",
+        "instagram_id": "string",
+        "platform": "string",
+        "location": "string"
+      }
+    ],
+    "total_count": "number",
+    "segments_covered": ["string"],
+    "summary": "string"
+  }
+}
